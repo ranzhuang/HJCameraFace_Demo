@@ -9,23 +9,10 @@
 #import "HJPreviewView.h"
 
 
-/**
- 视角转换
-
- @param eyePosition eyePosition description
- @return return value description
- */
-static inline CATransform3D HJMakePerspectiveTransform(CGFloat eyePosition) {
-    CATransform3D transform = CATransform3DIdentity;
-    //眼睛的位置
-    transform.m34 = -1.0;
-    return transform;
-}
-
 @interface  HJPreviewView()
 
-@property (nonatomic, strong) CALayer *overlayLayer;
 @property (nonatomic, strong) NSMutableArray *faceLayers;
+
 @end
 
 @implementation HJPreviewView
@@ -47,11 +34,6 @@ static inline CATransform3D HJMakePerspectiveTransform(CGFloat eyePosition) {
 #pragma mark - 设置UI
 - (void)setUI {
     self.faceLayers = [NSMutableArray array];
-//    self.videoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-//    self.overlayLayer = [CALayer layer];
-//    self.overlayLayer.frame = self.bounds;
-//    self.overlayLayer.sublayerTransform = HJMakePerspectiveTransform(1000);
-//    [self.videoLayer addSublayer:self.overlayLayer];
 }
 
 /**
@@ -60,12 +42,14 @@ static inline CATransform3D HJMakePerspectiveTransform(CGFloat eyePosition) {
  @param facesArray facesArray description
  @return return value description
  */
-- (NSArray *)transformFacesFormFaces:(NSArray *)facesArray {
+- (NSArray *)transformFacesFormFaces:(NSArray *)facesArray withLayer:(AVCaptureVideoPreviewLayer *)videoLayer {
     NSMutableArray *transfrtmFaces = [NSMutableArray array];
     for (AVMetadataObject *faces in facesArray) {
         if (faces.type == AVMetadataObjectTypeFace) {
-            AVMetadataObject *transformFace = [self.videoLayer transformedMetadataObjectForMetadataObject:faces];
-            [transfrtmFaces addObject:transformFace];
+            AVMetadataObject *transformFace = [videoLayer transformedMetadataObjectForMetadataObject:faces];
+            if (transformFace) {
+                [transfrtmFaces addObject:transformFace];
+            }
         }
     }
     return transfrtmFaces;
@@ -91,17 +75,16 @@ static inline CATransform3D HJMakePerspectiveTransform(CGFloat eyePosition) {
     return CATransform3DMakeRotation(angle, 0, 0, 1);
 }
 
-#pragma mark - set & get
-
-- (void)setFaces:(NSArray *)faces {
-    _faces = faces;
-    for (CALayer *layer in self.videoLayer.sublayers) {
+- (void)showPreviewWithFaces:(NSArray *)faces withVideoLayer:(AVCaptureVideoPreviewLayer *)videoLayer {
+    //便利videoLayer的sublayers,如果是之前我们存入的layer，就将其移除
+    for (CALayer *layer in videoLayer.sublayers) {
         if ([self.faceLayers containsObject:layer]) {
             [layer removeFromSuperlayer];
             [self.faceLayers removeObject:layer];
         }
     }
-    NSArray *transformFaces = [self transformFacesFormFaces:faces];
+    NSArray *transformFaces = [self transformFacesFormFaces:faces withLayer:videoLayer];
+    //将识别到的face添加上识别框
     for (AVMetadataFaceObject *face in transformFaces) {
         CALayer *layer = [CALayer layer];
         layer.borderWidth = 5.0f;
@@ -113,19 +96,15 @@ static inline CATransform3D HJMakePerspectiveTransform(CGFloat eyePosition) {
             CATransform3D t = CATransform3DMakeRotation(face.rollAngle * M_PI / 180, 0, 0, 1);
             layer.transform = CATransform3DConcat(layer.transform, t);
         }
-        
+
         if ([face hasYawAngle]) {
             CATransform3D t = CATransform3DConcat(CATransform3DMakeRotation(face.yawAngle * M_PI / 180, 0, -1, 0), [self orientationTransform]);
-            
+
             layer.transform = CATransform3DConcat(layer.transform, t);
         }
-        [self.videoLayer addSublayer:layer];
+        [videoLayer addSublayer:layer];
+        //将所创建的layer存入数组中
         [self.faceLayers addObject:layer];
     }
-//    for (NSNumber *faceID in keyFaces) {
-//        CALayer *layer = self.faceLayers[faceID];
-//        [layer removeFromSuperlayer];
-//        [self.faceLayers removeObjectForKey:faceID];
-//    }
 }
 @end

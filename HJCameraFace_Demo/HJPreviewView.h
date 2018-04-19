@@ -10,7 +10,14 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface HJPreviewView : UIView
-@property (nonatomic, copy) NSArray *faces;
-@property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoLayer;
+
+
+/**
+ 显示人脸识别框
+
+ @param faces      获取到的人脸对象数组
+ @param videoLayer 图层
+ */
+- (void)showPreviewWithFaces:(NSArray *)faces withVideoLayer:(AVCaptureVideoPreviewLayer *)videoLayer;
 
 @end

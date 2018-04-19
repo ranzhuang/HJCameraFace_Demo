@@ -53,22 +53,7 @@
 
 #pragma mark - AVCaptureMetadataOutputObjectsDelegate
 - (void)captureOutput:(AVCaptureOutput *)output didOutputMetadataObjects:(NSArray<__kindof AVMetadataObject *> *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
-    if (metadataObjects.count > 0) {
-        self.faceView.videoLayer = self.videoLayer;
-        self.faceView.faces = metadataObjects;
-    }
-//    if (metadataObjects.count>0) {
-//        AVMetadataMachineReadableCodeObject *metadataObject = [metadataObjects objectAtIndex :0];
-//        if (metadataObject.type == AVMetadataObjectTypeFace) {
-//            AVMetadataObject *objec = [self.videoLayer transformedMetadataObjectForMetadataObject:metadataObject];
-//            AVMetadataFaceObject *face = (AVMetadataFaceObject *)objec;
-//            CALayer *faceLayer = [[CALayer alloc] init];
-//            faceLayer.frame = face.bounds;
-//            faceLayer.borderWidth = 5.0f;
-//            faceLayer.borderColor = [UIColor colorWithRed:0.188 green:0.517 blue:0.877 alpha:1].CGColor;
-//            [self.videoLayer addSublayer:faceLayer];
-//        }
-//    }
+    [self.faceView showPreviewWithFaces:metadataObjects withVideoLayer:self.videoLayer];
 }
 
 #pragma mark - set & get
