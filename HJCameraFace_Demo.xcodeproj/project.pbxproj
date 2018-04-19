@@ -15,6 +15,7 @@
 		744472072087816500621EBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 744472062087816500621EBD /* main.m */; };
 		744472112087816500621EBD /* HJCameraFace_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744472102087816500621EBD /* HJCameraFace_DemoTests.m */; };
 		7444721C2087816500621EBD /* HJCameraFace_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444721B2087816500621EBD /* HJCameraFace_DemoUITests.m */; };
+		7444722B2087875900621EBD /* HJPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444722A2087875900621EBD /* HJPreviewView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		744472172087816500621EBD /* HJCameraFace_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJCameraFace_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7444721B2087816500621EBD /* HJCameraFace_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJCameraFace_DemoUITests.m; sourceTree = "<group>"; };
 		7444721D2087816500621EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744472292087875900621EBD /* HJPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJPreviewView.h; sourceTree = "<group>"; };
+		7444722A2087875900621EBD /* HJPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJPreviewView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				744471F82087816500621EBD /* AppDelegate.m */,
 				744471FA2087816500621EBD /* ViewController.h */,
 				744471FB2087816500621EBD /* ViewController.m */,
+				744472292087875900621EBD /* HJPreviewView.h */,
+				7444722A2087875900621EBD /* HJPreviewView.m */,
 				744471FD2087816500621EBD /* Main.storyboard */,
 				744472002087816500621EBD /* Assets.xcassets */,
 				744472022087816500621EBD /* LaunchScreen.storyboard */,
@@ -266,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				744471FC2087816500621EBD /* ViewController.m in Sources */,
+				7444722B2087875900621EBD /* HJPreviewView.m in Sources */,
 				744472072087816500621EBD /* main.m in Sources */,
 				744471F92087816500621EBD /* AppDelegate.m in Sources */,
 			);
@@ -433,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWF69M6HX2;
 				INFOPLIST_FILE = HJCameraFace_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.546597705.HJCameraFace-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWF69M6HX2;
 				INFOPLIST_FILE = HJCameraFace_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.546597705.HJCameraFace-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
