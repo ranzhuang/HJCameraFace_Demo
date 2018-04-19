@@ -10,4 +10,6 @@
 
 @interface TestDemo : NSObject
 
+@property (nonatomic, copy) NSString *name;
+
 @end
