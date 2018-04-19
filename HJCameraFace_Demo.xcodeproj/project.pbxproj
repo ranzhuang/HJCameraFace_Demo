@@ -16,6 +16,7 @@
 		744472112087816500621EBD /* HJCameraFace_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744472102087816500621EBD /* HJCameraFace_DemoTests.m */; };
 		7444721C2087816500621EBD /* HJCameraFace_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444721B2087816500621EBD /* HJCameraFace_DemoUITests.m */; };
 		7444722B2087875900621EBD /* HJPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444722A2087875900621EBD /* HJPreviewView.m */; };
+		F889CCC920888107009173B3 /* TestDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = F889CCC820888107009173B3 /* TestDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		7444721D2087816500621EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		744472292087875900621EBD /* HJPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJPreviewView.h; sourceTree = "<group>"; };
 		7444722A2087875900621EBD /* HJPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJPreviewView.m; sourceTree = "<group>"; };
+		F889CCC720888107009173B3 /* TestDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDemo.h; sourceTree = "<group>"; };
+		F889CCC820888107009173B3 /* TestDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				744472022087816500621EBD /* LaunchScreen.storyboard */,
 				744472052087816500621EBD /* Info.plist */,
 				744472062087816500621EBD /* main.m */,
+				F889CCC720888107009173B3 /* TestDemo.h */,
+				F889CCC820888107009173B3 /* TestDemo.m */,
 			);
 			path = HJCameraFace_Demo;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			files = (
 				744471FC2087816500621EBD /* ViewController.m in Sources */,
 				7444722B2087875900621EBD /* HJPreviewView.m in Sources */,
+				F889CCC920888107009173B3 /* TestDemo.m in Sources */,
 				744472072087816500621EBD /* main.m in Sources */,
 				744471F92087816500621EBD /* AppDelegate.m in Sources */,
 			);
