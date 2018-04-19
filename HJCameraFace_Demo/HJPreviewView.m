@@ -12,7 +12,6 @@
 @interface  HJPreviewView()
 
 @property (nonatomic, strong) NSMutableArray *faceLayers;
-
 @end
 
 @implementation HJPreviewView
@@ -76,16 +75,21 @@
 }
 
 - (void)showPreviewWithFaces:(NSArray *)faces withVideoLayer:(AVCaptureVideoPreviewLayer *)videoLayer {
-    //便利videoLayer的sublayers,如果是之前我们存入的layer，就将其移除
-    for (CALayer *layer in videoLayer.sublayers) {
-        if ([self.faceLayers containsObject:layer]) {
-            [layer removeFromSuperlayer];
-            [self.faceLayers removeObject:layer];
+    //此处是将之前显示在videoLayer上的人脸layer移除，并且将之前的人脸layer从faceLayers数组中移除
+    NSArray *tempArray = [NSArray arrayWithArray:self.faceLayers];
+    for (CALayer *leyerInArr in tempArray) {
+        for (CALayer *layer in videoLayer.sublayers) {
+            if (layer == leyerInArr) {
+                [layer removeFromSuperlayer];
+                [self.faceLayers removeObject:layer];
+                break;
+            }
         }
     }
     NSArray *transformFaces = [self transformFacesFormFaces:faces withLayer:videoLayer];
     //将识别到的face添加上识别框
     for (AVMetadataFaceObject *face in transformFaces) {
+        NSLog(@"%ld",(long)face.faceID);
         CALayer *layer = [CALayer layer];
         layer.borderWidth = 5.0f;
         layer.borderColor = [UIColor colorWithRed:0.188 green:0.517 blue:0.877 alpha:1].CGColor;
