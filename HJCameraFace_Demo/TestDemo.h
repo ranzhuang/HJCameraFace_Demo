@@ -12,4 +12,7 @@
 
 @property (nonatomic, copy) NSString *name;
 
+@property (nonatomic, copy) NSString *city;
+@property (nonatomic, assign) NSInteger age;
+
 @end
