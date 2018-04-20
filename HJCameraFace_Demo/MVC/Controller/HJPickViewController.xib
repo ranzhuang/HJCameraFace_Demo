@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HJPickViewController">
+            <connections>
+                <outlet property="backButton" destination="9YP-FI-dgR" id="m78-9w-I0p"/>
+                <outlet property="changeCameraButton" destination="xRb-aD-NSU" id="ddH-Nw-Uc6"/>
+                <outlet property="sureButton" destination="h0O-8g-Ypm" id="tXA-lW-W6G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="269" height="495"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYx-lm-TW7">
+                    <rect key="frame" x="0.0" y="0.0" width="269" height="495"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YP-FI-dgR">
+                            <rect key="frame" x="20" y="30" width="24" height="24"/>
+                            <state key="normal" image="返回"/>
+                            <connections>
+                                <action selector="backButtonDidClicked:" destination="-1" eventType="touchUpInside" id="Vr3-u5-ScP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0O-8g-Ypm">
+                            <rect key="frame" x="100.5" y="407" width="68" height="68"/>
+                            <state key="normal" image="录制按钮"/>
+                            <connections>
+                                <action selector="sureButtonDidClicked:" destination="-1" eventType="touchUpInside" id="9m4-WH-Vic"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRb-aD-NSU">
+                            <rect key="frame" x="205" y="20" width="44" height="44"/>
+                            <state key="normal" image="发布"/>
+                            <connections>
+                                <action selector="changeButtonDidClicked:" destination="-1" eventType="touchUpInside" id="2yv-sE-tGV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="9YP-FI-dgR" firstAttribute="leading" secondItem="pYx-lm-TW7" secondAttribute="leading" constant="20" id="B32-8r-9xy"/>
+                        <constraint firstAttribute="bottom" secondItem="h0O-8g-Ypm" secondAttribute="bottom" constant="20" id="DGx-r5-sus"/>
+                        <constraint firstItem="xRb-aD-NSU" firstAttribute="centerY" secondItem="9YP-FI-dgR" secondAttribute="centerY" id="EFs-AQ-A5e"/>
+                        <constraint firstItem="h0O-8g-Ypm" firstAttribute="centerX" secondItem="pYx-lm-TW7" secondAttribute="centerX" id="GqQ-BE-wgL"/>
+                        <constraint firstItem="9YP-FI-dgR" firstAttribute="top" secondItem="pYx-lm-TW7" secondAttribute="top" constant="30" id="cSg-bh-TmI"/>
+                        <constraint firstAttribute="trailing" secondItem="xRb-aD-NSU" secondAttribute="trailing" constant="20" id="sG1-AY-5me"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pYx-lm-TW7" secondAttribute="bottom" id="7cN-v5-Jes"/>
+                <constraint firstAttribute="trailing" secondItem="pYx-lm-TW7" secondAttribute="trailing" id="Kzi-3a-N3T"/>
+                <constraint firstItem="pYx-lm-TW7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WVU-Y4-KQp"/>
+                <constraint firstItem="pYx-lm-TW7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zzu-q1-ZmS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-371" y="-105"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="发布" width="44" height="44"/>
+        <image name="录制按钮" width="68" height="68"/>
+        <image name="返回" width="24" height="24"/>
+    </resources>
+</document>

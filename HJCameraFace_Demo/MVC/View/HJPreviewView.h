@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+//用于显示识别到人脸的小方框
 @interface HJPreviewView : UIView
 
 

@@ -1,16 +1,16 @@
 //
-//  ViewController.m
+//  HJFaceViewController.m
 //  HJCameraFace_Demo
 //
-//  Created by 黄炬 on 2018/4/18.
+//  Created by MDLK-HJ on 2018/4/20.
 //  Copyright © 2018年 黄炬. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HJFaceViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "HJPreviewView.h"
 
-@interface ViewController ()<AVCaptureMetadataOutputObjectsDelegate>
+@interface HJFaceViewController ()<AVCaptureMetadataOutputObjectsDelegate>
 
 @property (nonatomic, strong) AVCaptureDevice *device;
 @property (nonatomic, strong) AVCaptureSession *session;
@@ -21,10 +21,11 @@
 
 @end
 
-@implementation ViewController
+@implementation HJFaceViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -109,6 +110,5 @@
     }
     return _faceView;
 }
-
 
 @end

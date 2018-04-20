@@ -16,7 +16,15 @@
 		744472112087816500621EBD /* HJCameraFace_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744472102087816500621EBD /* HJCameraFace_DemoTests.m */; };
 		7444721C2087816500621EBD /* HJCameraFace_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444721B2087816500621EBD /* HJCameraFace_DemoUITests.m */; };
 		7444722B2087875900621EBD /* HJPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444722A2087875900621EBD /* HJPreviewView.m */; };
-		F889CCC920888107009173B3 /* TestDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = F889CCC820888107009173B3 /* TestDemo.m */; };
+		F89B92852089950400AA539F /* HJCameraQrCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F89B927F2089950400AA539F /* HJCameraQrCodeTool.m */; };
+		F89B92862089950400AA539F /* HJCameraBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F89B92802089950400AA539F /* HJCameraBaseTool.m */; };
+		F89B92872089950400AA539F /* HJCameraTakingPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = F89B92842089950400AA539F /* HJCameraTakingPicture.m */; };
+		F89B928F2089960A00AA539F /* HJPickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F89B928C2089960A00AA539F /* HJPickViewController.xib */; };
+		F89B92902089960A00AA539F /* HJPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89B928E2089960A00AA539F /* HJPickViewController.m */; };
+		F89B92942089964B00AA539F /* UIImage+HJImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F89B92932089964B00AA539F /* UIImage+HJImage.m */; };
+		F89B92972089BB1700AA539F /* HJQrCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89B92962089BB1700AA539F /* HJQrCodeViewController.m */; };
+		F89B929A2089BB2800AA539F /* HJFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89B92992089BB2800AA539F /* HJFaceViewController.m */; };
+		F89B92A12089CB6900AA539F /* HJQrMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F89B92A02089CB6900AA539F /* HJQrMainView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +63,26 @@
 		7444721D2087816500621EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		744472292087875900621EBD /* HJPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJPreviewView.h; sourceTree = "<group>"; };
 		7444722A2087875900621EBD /* HJPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJPreviewView.m; sourceTree = "<group>"; };
-		F889CCC720888107009173B3 /* TestDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDemo.h; sourceTree = "<group>"; };
-		F889CCC820888107009173B3 /* TestDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDemo.m; sourceTree = "<group>"; };
+		F89B927F2089950400AA539F /* HJCameraQrCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCameraQrCodeTool.m; sourceTree = "<group>"; };
+		F89B92802089950400AA539F /* HJCameraBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCameraBaseTool.m; sourceTree = "<group>"; };
+		F89B92812089950400AA539F /* HJCameraTakingPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCameraTakingPicture.h; sourceTree = "<group>"; };
+		F89B92822089950400AA539F /* HJCameraBaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCameraBaseTool.h; sourceTree = "<group>"; };
+		F89B92832089950400AA539F /* HJCameraQrCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCameraQrCodeTool.h; sourceTree = "<group>"; };
+		F89B92842089950400AA539F /* HJCameraTakingPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCameraTakingPicture.m; sourceTree = "<group>"; };
+		F89B928C2089960A00AA539F /* HJPickViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HJPickViewController.xib; sourceTree = "<group>"; };
+		F89B928D2089960A00AA539F /* HJPickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPickViewController.h; sourceTree = "<group>"; };
+		F89B928E2089960A00AA539F /* HJPickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPickViewController.m; sourceTree = "<group>"; };
+		F89B92922089964B00AA539F /* UIImage+HJImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HJImage.h"; sourceTree = "<group>"; };
+		F89B92932089964B00AA539F /* UIImage+HJImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HJImage.m"; sourceTree = "<group>"; };
+		F89B92952089BB1700AA539F /* HJQrCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJQrCodeViewController.h; sourceTree = "<group>"; };
+		F89B92962089BB1700AA539F /* HJQrCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJQrCodeViewController.m; sourceTree = "<group>"; };
+		F89B92982089BB2800AA539F /* HJFaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJFaceViewController.h; sourceTree = "<group>"; };
+		F89B92992089BB2800AA539F /* HJFaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJFaceViewController.m; sourceTree = "<group>"; };
+		F89B929C2089BBAC00AA539F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F89B929D2089BBC300AA539F /* HJCamera-Import.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HJCamera-Import.h"; sourceTree = "<group>"; };
+		F89B929E2089BC7600AA539F /* HJCamera-Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HJCamera-Macros.h"; sourceTree = "<group>"; };
+		F89B929F2089CB6900AA539F /* HJQrMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJQrMainView.h; sourceTree = "<group>"; };
+		F89B92A02089CB6900AA539F /* HJQrMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJQrMainView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,19 +133,10 @@
 		744471F62087816500621EBD /* HJCameraFace_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				744471F72087816500621EBD /* AppDelegate.h */,
-				744471F82087816500621EBD /* AppDelegate.m */,
-				744471FA2087816500621EBD /* ViewController.h */,
-				744471FB2087816500621EBD /* ViewController.m */,
-				744472292087875900621EBD /* HJPreviewView.h */,
-				7444722A2087875900621EBD /* HJPreviewView.m */,
-				744471FD2087816500621EBD /* Main.storyboard */,
-				744472002087816500621EBD /* Assets.xcassets */,
-				744472022087816500621EBD /* LaunchScreen.storyboard */,
-				744472052087816500621EBD /* Info.plist */,
-				744472062087816500621EBD /* main.m */,
-				F889CCC720888107009173B3 /* TestDemo.h */,
-				F889CCC820888107009173B3 /* TestDemo.m */,
+				F89B92892089955D00AA539F /* MVC */,
+				F89B929B2089BB7800AA539F /* Configs */,
+				F89B927E208994E500AA539F /* CameraTool */,
+				F89B92882089950F00AA539F /* Others */,
 			);
 			path = HJCameraFace_Demo;
 			sourceTree = "<group>";
@@ -140,6 +157,89 @@
 				7444721D2087816500621EBD /* Info.plist */,
 			);
 			path = HJCameraFace_DemoUITests;
+			sourceTree = "<group>";
+		};
+		F89B927E208994E500AA539F /* CameraTool */ = {
+			isa = PBXGroup;
+			children = (
+				F89B92912089964B00AA539F /* Category */,
+				F89B92822089950400AA539F /* HJCameraBaseTool.h */,
+				F89B92802089950400AA539F /* HJCameraBaseTool.m */,
+				F89B92832089950400AA539F /* HJCameraQrCodeTool.h */,
+				F89B927F2089950400AA539F /* HJCameraQrCodeTool.m */,
+				F89B92812089950400AA539F /* HJCameraTakingPicture.h */,
+				F89B92842089950400AA539F /* HJCameraTakingPicture.m */,
+			);
+			path = CameraTool;
+			sourceTree = "<group>";
+		};
+		F89B92882089950F00AA539F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				744471F72087816500621EBD /* AppDelegate.h */,
+				744471F82087816500621EBD /* AppDelegate.m */,
+				744471FA2087816500621EBD /* ViewController.h */,
+				744471FB2087816500621EBD /* ViewController.m */,
+				744471FD2087816500621EBD /* Main.storyboard */,
+				744472002087816500621EBD /* Assets.xcassets */,
+				744472022087816500621EBD /* LaunchScreen.storyboard */,
+				744472052087816500621EBD /* Info.plist */,
+				744472062087816500621EBD /* main.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		F89B92892089955D00AA539F /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				F89B928B2089956D00AA539F /* View */,
+				F89B928A2089956600AA539F /* Controller */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		F89B928A2089956600AA539F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F89B928D2089960A00AA539F /* HJPickViewController.h */,
+				F89B928E2089960A00AA539F /* HJPickViewController.m */,
+				F89B928C2089960A00AA539F /* HJPickViewController.xib */,
+				F89B92952089BB1700AA539F /* HJQrCodeViewController.h */,
+				F89B92962089BB1700AA539F /* HJQrCodeViewController.m */,
+				F89B92982089BB2800AA539F /* HJFaceViewController.h */,
+				F89B92992089BB2800AA539F /* HJFaceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F89B928B2089956D00AA539F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				744472292087875900621EBD /* HJPreviewView.h */,
+				7444722A2087875900621EBD /* HJPreviewView.m */,
+				F89B929F2089CB6900AA539F /* HJQrMainView.h */,
+				F89B92A02089CB6900AA539F /* HJQrMainView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F89B92912089964B00AA539F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F89B92922089964B00AA539F /* UIImage+HJImage.h */,
+				F89B92932089964B00AA539F /* UIImage+HJImage.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F89B929B2089BB7800AA539F /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				F89B929D2089BBC300AA539F /* HJCamera-Import.h */,
+				F89B929E2089BC7600AA539F /* HJCamera-Macros.h */,
+				F89B929C2089BBAC00AA539F /* PrefixHeader.pch */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				744472042087816500621EBD /* LaunchScreen.storyboard in Resources */,
+				F89B928F2089960A00AA539F /* HJPickViewController.xib in Resources */,
 				744472012087816500621EBD /* Assets.xcassets in Resources */,
 				744471FF2087816500621EBD /* Main.storyboard in Resources */,
 			);
@@ -276,10 +377,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				744471FC2087816500621EBD /* ViewController.m in Sources */,
+				F89B929A2089BB2800AA539F /* HJFaceViewController.m in Sources */,
+				F89B92902089960A00AA539F /* HJPickViewController.m in Sources */,
 				7444722B2087875900621EBD /* HJPreviewView.m in Sources */,
-				F889CCC920888107009173B3 /* TestDemo.m in Sources */,
+				F89B92862089950400AA539F /* HJCameraBaseTool.m in Sources */,
+				F89B92852089950400AA539F /* HJCameraQrCodeTool.m in Sources */,
+				F89B92A12089CB6900AA539F /* HJQrMainView.m in Sources */,
 				744472072087816500621EBD /* main.m in Sources */,
+				F89B92942089964B00AA539F /* UIImage+HJImage.m in Sources */,
 				744471F92087816500621EBD /* AppDelegate.m in Sources */,
+				F89B92972089BB1700AA539F /* HJQrCodeViewController.m in Sources */,
+				F89B92872089950400AA539F /* HJCameraTakingPicture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +552,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWF69M6HX2;
-				INFOPLIST_FILE = HJCameraFace_Demo/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HJCameraFace_Demo/Configs/PrefixHeader.pch";
+				INFOPLIST_FILE = HJCameraFace_Demo/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.546597705.HJCameraFace-Demo";
@@ -459,7 +568,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWF69M6HX2;
-				INFOPLIST_FILE = HJCameraFace_Demo/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HJCameraFace_Demo/Configs/PrefixHeader.pch";
+				INFOPLIST_FILE = HJCameraFace_Demo/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.546597705.HJCameraFace-Demo";
