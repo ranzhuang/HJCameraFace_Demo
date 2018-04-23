@@ -15,4 +15,14 @@
 #define HJQrWidth (HJScreenWidth - HJQrX * 2)
 #define HJQrY ((HJScreenHeight - (HJQrWidth)) / 2)
 
+
+
+//Block
+
+/**
+ 错误信息的Block
+ 
+ @param error 错误信息
+ */
+typedef void(^errorBlock)(NSError *error);
 #endif /* HJCamera_Macros_h */

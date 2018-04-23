@@ -60,7 +60,7 @@
 
 - (NSMutableDictionary *)controlDict {
     if (!_controlDict) {
-        _controlDict = @{@"HJPickViewController":@"自定义相机", @"HJQrCodeViewController":@"二维码扫描", @"HJFaceViewController":@"人脸识别"}.mutableCopy;
+        _controlDict = @{@"HJPickViewController":@"自定义相机", @"HJQrCodeViewController":@"二维码扫描", @"HJFaceViewController":@"人脸识别", @"HJMoviewViewController":@"视频录制"}.mutableCopy;
     }
     return _controlDict;
 }

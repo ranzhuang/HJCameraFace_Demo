@@ -6,8 +6,8 @@
 //  Copyright © 2018年 MDLK-HJ. All rights reserved.
 //
 
-#import "HJPickViewController.h"
-#import "HJCameraTakingPicture.h"
+#import "HJMoviewViewController.h"
+#import "HJCameraTakingMovie.h"
 
 
 #define HJMacroWidth [UIScreen mainScreen].bounds.size.width
@@ -16,7 +16,7 @@
 
 
 
-@interface HJPickViewController ()
+@interface HJMoviewViewController ()
 
 /// 返回
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
@@ -25,21 +25,19 @@
 /// 开始按钮
 @property (weak, nonatomic) IBOutlet UIButton *sureButton;
 
-@property (nonatomic, strong) HJCameraTakingPicture *cameraTool;
-
-@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) HJCameraTakingMovie *cameraTool;
 
 @end
 
-@implementation HJPickViewController
+@implementation HJMoviewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
-    [self createCamera];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [self createCamera];
     self.navigationController.navigationBar.hidden = YES;
 }
 - (void)viewWillDisappear:(BOOL)animated {
@@ -47,12 +45,20 @@
 }
 
 - (void)createCamera {
-    self.cameraTool = [[HJCameraTakingPicture alloc] init];
+    self.cameraTool = [[HJCameraTakingMovie alloc] init];
     NSError *error;
     if([self.cameraTool creatSession:&error]) {
         [self.view.layer insertSublayer:self.cameraTool.previewLayer atIndex:0];
         [self.cameraTool startSession];
     }
+    WS(weakSelf);
+    self.cameraTool.finishRecord = ^(NSURL *outputFileURL, NSError *error) {
+        [weakSelf.cameraTool writeMovieToLibrary:outputFileURL success:^(NSString *videoPath) {
+            NSLog(@"保存成功");
+        } error:^(NSError *error) {
+            NSLog(@"保存失败");
+        }];
+    };
 }
 
 #pragma mark - 点击事件
@@ -67,17 +73,14 @@
     }
 }
 - (IBAction)sureButtonDidClicked:(UIButton *)sender {
-    WS(weakSelf)
-    [self.cameraTool getStillImage:^(UIImage *image) {
-        weakSelf.image = image;
-        [weakSelf.cameraTool stopSession];
-        [weakSelf.cameraTool savaToLiraryWithImage:image success:^(UIImage *image) {
-            [weakSelf backButtonDidClicked:nil];
-        } error:^(NSError *error) {
-            NSLog(@"保存失败");
-            [weakSelf.cameraTool startSession];
-        }];
-    }];
+    if ([sender.currentTitle isEqualToString:@"开始录制"]) {
+        [self.cameraTool startRecording];
+        [sender setTitle:@"录制中" forState:UIControlStateNormal];
+    } else if ([sender.currentTitle isEqualToString:@"录制中"]) {
+        [self.cameraTool stopRecording];
+        [self.cameraTool stopSession];
+        [sender.currentTitle isEqualToString:@"录制完成"];
+    }
 }
 
 

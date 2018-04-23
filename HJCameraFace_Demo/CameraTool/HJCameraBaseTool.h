@@ -9,6 +9,31 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
+/**
+ 获取图片方向
+ 
+ @return return value description
+ */
+static inline AVCaptureVideoOrientation currentVideoOrientation() {
+    //通过设备的方向去修正图片的方向
+    AVCaptureVideoOrientation orientation;
+    switch ([[UIDevice currentDevice] orientation]) {
+        case UIDeviceOrientationPortrait:
+            orientation = AVCaptureVideoOrientationPortrait;
+            break;
+        case UIDeviceOrientationPortraitUpsideDown:
+            orientation = AVCaptureVideoOrientationPortraitUpsideDown;
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            orientation = AVCaptureVideoOrientationLandscapeLeft;
+            break;
+        default:
+            orientation = AVCaptureVideoOrientationLandscapeRight;
+            break;
+    }
+    return orientation;
+}
+
 @interface HJCameraBaseTool : NSObject
 /**
  设备

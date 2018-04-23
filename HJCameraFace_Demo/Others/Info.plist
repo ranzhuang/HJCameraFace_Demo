@@ -42,6 +42,10 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>需要访问相机</string>
+	<string>HJ需要访问相机</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>HJ需要获取你的相册权限</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>HJ需要获取你的麦克风权限</string>
 </dict>
 </plist>

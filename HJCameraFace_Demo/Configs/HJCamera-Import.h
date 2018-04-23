@@ -12,6 +12,7 @@
 #import "HJPickViewController.h"
 #import "HJQrCodeViewController.h"
 #import "HJFaceViewController.h"
+#import "HJMoviewViewController.h"
 
 
 //===============================分类========================//

@@ -9,6 +9,7 @@
 #import "HJCameraBaseTool.h"
 
 static void *HJCameraAdjustingExposureContext = &HJCameraAdjustingExposureContext;
+
 /**
  获取指定摄像头设备
  
