@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		415D7C85D07E5EADFC05D5F0 /* libPods-HJCameraFace_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 774E518D6481576AE3AB835A /* libPods-HJCameraFace_Demo.a */; };
 		744471F92087816500621EBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 744471F82087816500621EBD /* AppDelegate.m */; };
 		744471FC2087816500621EBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744471FB2087816500621EBD /* ViewController.m */; };
 		744471FF2087816500621EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744471FD2087816500621EBD /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		F89B92A7208D813500AA539F /* HJCameraTakingFace.m in Sources */ = {isa = PBXBuildFile; fileRef = F89B92A6208D813500AA539F /* HJCameraTakingFace.m */; };
 		F89B92AB208D88C200AA539F /* HJMoviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F89B92A9208D88C200AA539F /* HJMoviewViewController.xib */; };
 		F89B92AC208D88C200AA539F /* HJMoviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89B92AA208D88C200AA539F /* HJMoviewViewController.m */; };
+		F8B8DF2A208F2B46004A8563 /* HJGPUVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B8DF29208F2B46004A8563 /* HJGPUVideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1841A9A551655045426B73A0 /* Pods-HJCameraFace_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJCameraFace_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJCameraFace_Demo/Pods-HJCameraFace_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		744471F42087816500621EBD /* HJCameraFace_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJCameraFace_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		744471F72087816500621EBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		744471F82087816500621EBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 		7444721D2087816500621EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		744472292087875900621EBD /* HJPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJPreviewView.h; sourceTree = "<group>"; };
 		7444722A2087875900621EBD /* HJPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJPreviewView.m; sourceTree = "<group>"; };
+		774E518D6481576AE3AB835A /* libPods-HJCameraFace_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HJCameraFace_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E580F7786B595D114FA684 /* Pods-HJCameraFace_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJCameraFace_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJCameraFace_Demo/Pods-HJCameraFace_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		F89B927F2089950400AA539F /* HJCameraQrCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCameraQrCodeTool.m; sourceTree = "<group>"; };
 		F89B92802089950400AA539F /* HJCameraBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCameraBaseTool.m; sourceTree = "<group>"; };
 		F89B92812089950400AA539F /* HJCameraTakingPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCameraTakingPicture.h; sourceTree = "<group>"; };
@@ -94,6 +99,8 @@
 		F89B92A8208D88C200AA539F /* HJMoviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJMoviewViewController.h; sourceTree = "<group>"; };
 		F89B92A9208D88C200AA539F /* HJMoviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HJMoviewViewController.xib; sourceTree = "<group>"; };
 		F89B92AA208D88C200AA539F /* HJMoviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJMoviewViewController.m; sourceTree = "<group>"; };
+		F8B8DF28208F2B46004A8563 /* HJGPUVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJGPUVideoViewController.h; sourceTree = "<group>"; };
+		F8B8DF29208F2B46004A8563 /* HJGPUVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJGPUVideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415D7C85D07E5EADFC05D5F0 /* libPods-HJCameraFace_Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +129,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BA1F9E4092EDB39D9CF804E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				774E518D6481576AE3AB835A /* libPods-HJCameraFace_Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B4C2C820292BDBFA735A3CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94E580F7786B595D114FA684 /* Pods-HJCameraFace_Demo.debug.xcconfig */,
+				1841A9A551655045426B73A0 /* Pods-HJCameraFace_Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		744471EB2087816500621EBD = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +153,8 @@
 				7444720F2087816500621EBD /* HJCameraFace_DemoTests */,
 				7444721A2087816500621EBD /* HJCameraFace_DemoUITests */,
 				744471F52087816500621EBD /* Products */,
+				5B4C2C820292BDBFA735A3CC /* Pods */,
+				3BA1F9E4092EDB39D9CF804E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,7 +174,9 @@
 				F89B92892089955D00AA539F /* MVC */,
 				F89B929B2089BB7800AA539F /* Configs */,
 				F89B927E208994E500AA539F /* CameraTool */,
+				F8B8DF21208F24F1004A8563 /* GPUCameraTool */,
 				F89B92882089950F00AA539F /* Others */,
+				9F58DBC020930A3C0087A996 /* Category */,
 			);
 			path = HJCameraFace_Demo;
 			sourceTree = "<group>";
@@ -168,6 +197,13 @@
 				7444721D2087816500621EBD /* Info.plist */,
 			);
 			path = HJCameraFace_DemoUITests;
+			sourceTree = "<group>";
+		};
+		9F58DBC020930A3C0087A996 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		F89B927E208994E500AA539F /* CameraTool */ = {
@@ -226,6 +262,8 @@
 				F89B92A8208D88C200AA539F /* HJMoviewViewController.h */,
 				F89B92AA208D88C200AA539F /* HJMoviewViewController.m */,
 				F89B92A9208D88C200AA539F /* HJMoviewViewController.xib */,
+				F8B8DF28208F2B46004A8563 /* HJGPUVideoViewController.h */,
+				F8B8DF29208F2B46004A8563 /* HJGPUVideoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +298,13 @@
 			path = Configs;
 			sourceTree = "<group>";
 		};
+		F8B8DF21208F24F1004A8563 /* GPUCameraTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GPUCameraTool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,6 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 744472202087816500621EBD /* Build configuration list for PBXNativeTarget "HJCameraFace_Demo" */;
 			buildPhases = (
+				F4D972497E4D6E2C1B88FBE8 /* [CP] Check Pods Manifest.lock */,
 				744471F02087816500621EBD /* Sources */,
 				744471F12087816500621EBD /* Frameworks */,
 				744471F22087816500621EBD /* Resources */,
@@ -322,6 +368,7 @@
 		744471EC2087816500621EBD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HJ;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "黄炬";
 				TargetAttributes = {
@@ -390,6 +437,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F4D972497E4D6E2C1B88FBE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HJCameraFace_Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		744471F02087816500621EBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -398,6 +466,7 @@
 				744471FC2087816500621EBD /* ViewController.m in Sources */,
 				F89B929A2089BB2800AA539F /* HJFaceViewController.m in Sources */,
 				F89B92902089960A00AA539F /* HJPickViewController.m in Sources */,
+				F8B8DF2A208F2B46004A8563 /* HJGPUVideoViewController.m in Sources */,
 				7444722B2087875900621EBD /* HJPreviewView.m in Sources */,
 				F89B92862089950400AA539F /* HJCameraBaseTool.m in Sources */,
 				F89B92A7208D813500AA539F /* HJCameraTakingFace.m in Sources */,
@@ -570,8 +639,10 @@
 		};
 		744472212087816500621EBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E580F7786B595D114FA684 /* Pods-HJCameraFace_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWF69M6HX2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HJCameraFace_Demo/Configs/PrefixHeader.pch";
@@ -580,14 +651,17 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.546597705.HJCameraFace-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		744472222087816500621EBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1841A9A551655045426B73A0 /* Pods-HJCameraFace_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWF69M6HX2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HJCameraFace_Demo/Configs/PrefixHeader.pch";
@@ -596,6 +670,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.546597705.HJCameraFace-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

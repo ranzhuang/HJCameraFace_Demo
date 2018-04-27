@@ -24,6 +24,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     self.qrCodeTool = [[HJCameraQrCodeTool alloc] init];
     self.qrCodeTool.delegate = self;
     if ([self.qrCodeTool creatSession:nil]) {
@@ -33,13 +34,15 @@
     }
 }
 - (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
     [self.qrCodeTool stopSession];
+    self.mainView.stop = YES;
 }
 
 #pragma mark - HJCameraQrCodeToolDelegate
 - (void)cameraQrcodeDidGetResultWithString:(NSString *)str {
     NSLog(@"%@",str);
-    [self.mainView stopAnimation];
+    self.mainView.stop = YES;
 }
 
 - (HJQrMainView *)mainView {

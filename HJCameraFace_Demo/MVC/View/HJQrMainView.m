@@ -8,7 +8,7 @@
 
 #import "HJQrMainView.h"
 
-@interface HJQrMainView();
+@interface HJQrMainView() <CAAnimationDelegate>
 
 /**
  扫码框
@@ -62,13 +62,24 @@
     animation.duration = 2.5;
     animation.fromValue = 0;
     animation.toValue = @(HJQrWidth);
-    animation.repeatCount = 1000;
-    animation.removedOnCompletion = NO;
+    animation.delegate = self;
     [self.qrLineImageView.layer addAnimation:animation forKey:@"translationY"];
 }
 
 - (void)stopAnimation {
     [self.qrLineImageView.layer removeAnimationForKey:@"translationY"];
+}
+
+#pragma mark - CAAnimationDelegate
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    if (!self.stop) {
+        [self stopAnimation];
+        [self startAnimation];
+    }
+}
+
+- (void)dealloc {
+    NSLog(@"销毁");
 }
 
 #pragma mark - get

@@ -10,7 +10,11 @@
 
 @interface HJQrMainView : UIView
 
+/**
+ 必须调用此方法用来停止动画,否则动画会一直添加
+ */
+@property (nonatomic, assign)BOOL stop;
+
 - (void)startAnimation;
-- (void)stopAnimation;
 
 @end

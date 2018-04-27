@@ -9,13 +9,18 @@
 #ifndef HJCamera_Import_h
 #define HJCamera_Import_h
 
+//===============================控制器========================//
 #import "HJPickViewController.h"
 #import "HJQrCodeViewController.h"
 #import "HJFaceViewController.h"
 #import "HJMoviewViewController.h"
+#import "HJGPUVideoViewController.h"
 
 
 //===============================分类========================//
 #import "UIImage+HJImage.h"
+
+//===============================三方库========================//
+#import <LFLiveKit/LFLiveKit.h>
 
 #endif /* HJCamera_Import_h */
